@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07111F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="22dp"
+        android:paddingTop="40dp"
+        android:paddingRight="22dp"
+        android:paddingBottom="70dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Дневник давления"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Контроль измерений и напоминания"
+            android:textColor="#8EA3B8"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:layout_marginBottom="22dp" />
+
+        <LinearLayout
+            android:id="@+id/inputCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#111827"
+            android:padding="18dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Новое измерение"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="12dp" />
+
+            <EditText
+                android:id="@+id/sysInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Верхнее давление"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:backgroundTint="#38BDF8" />
+
+            <EditText
+                android:id="@+id/diaInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Нижнее давление"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:backgroundTint="#38BDF8" />
+
+            <EditText
+                android:id="@+id/pulseInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Пульс"
+                android:inputType="number"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:backgroundTint="#38BDF8" />
+
+            <EditText
+                android:id="@+id/noteInput"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Заметка"
+                android:singleLine="true"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#64748B"
+                android:backgroundTint="#38BDF8" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Сохранить измерение"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2563EB"
+                android:layout_marginTop="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Введите данные измерения"
+            android:textColor="#E2E8F0"
+            android:textSize="17sp"
+            android:background="#111827"
+            android:padding="16dp"
+            android:layout_marginBottom="14dp" />
+
+        <TextView
+            android:id="@+id/statsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Статистика появится после записей"
+            android:textColor="#CBD5E1"
+            android:textSize="16sp"
+            android:background="#111827"
+            android:padding="16dp"
+            android:layout_marginBottom="14dp" />
+
+        <FrameLayout
+            android:id="@+id/chartContainer"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="#111827"
+            android:layout_marginBottom="14dp" />
+
+        <Button
+            android:id="@+id/reminderButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Настроить напоминания"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#059669"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/historyButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="История измерений"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#334155"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Очистить всё"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#B91C1C" />
+
+    </LinearLayout>
+
+</ScrollView>
